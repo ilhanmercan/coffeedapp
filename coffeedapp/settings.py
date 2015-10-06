@@ -56,7 +56,11 @@ ROOT_URLCONF = 'coffeedapp.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         'DIRS': [os.path.join(MAIN_DIR, 'templates')],
+=======
+        'DIRS': [],
+>>>>>>> 477b6065e65e8615ba1a95c5c7311d6770af1630
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -112,7 +116,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+<<<<<<< HEAD
 
+=======
+TEMPLATE_DIRS = (
+    os.path.join(MAIN_DIR, 'templates'),
+    )
+>>>>>>> 477b6065e65e8615ba1a95c5c7311d6770af1630
 
 STATICFILES_DIRS = (
     os.path.join(MAIN_DIR, 'static'),
