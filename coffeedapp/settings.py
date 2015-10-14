@@ -87,7 +87,7 @@ if ON_HEROKU == '1':
 
     import dj_database_url
 
-    DATABASES['default'] = dj_database_url.config()
+    DATABASES = {'default': dj_database_url.config()}
 
 else: 
 
