@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>C O F F E E D</title>
+    <title>G E T   S T O N E D</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
@@ -48,12 +48,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">C O F F E E D</a>
+                <a class="navbar-brand page-scroll" href="/">G E T  S T O N E D</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                    {% block navigation %}
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -66,12 +67,16 @@
                     <li>
                         <a class="page-scroll" href="#contact">Get Invited for Beta</a>
                     </li>
+                    {% endblock %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
+    
+
+    {% block main_content %}
 
     <!-- Header -->
     <header>
@@ -196,6 +201,9 @@
             </div>
         </div>
     </section>
+    
+    {% endblock %}
+
 
     <footer>
         <div class="container">
@@ -225,7 +233,7 @@
         </div>
     </footer>
 
-   
+  
 
     <!-- Portfolio Modal 6 -->
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
